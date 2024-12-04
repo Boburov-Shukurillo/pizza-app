@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.containerb {
+  @apply w-full max-w-[1440px] px-5 mx-auto;
+}
+
+* {
+  user-select: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+.mask-ink {
+  -webkit-mask-image: url("./assets/burger.jpeg");
+  -webkit-mask-size: cover;
+  -webkit-mask-repeat: no-repeat;
+  mask-image: url("./assets/ink.png");
+  mask-size: contain;
+  mask-repeat: no-repeat;
+}
+
+@font-face {
+  src: url(./fonts/Quicksand-Bold.ttf);
+  font-family: quicksand-bold;
+}
+
+.quicksand-bold {
+  font-family: quicksand-bold;
+}
+
+@font-face {
+  src: url(./fonts/Quicksand-SemiBold.ttf);
+  font-family: quicksand-semibold;
+}
+
+.quicksand-semibold {
+  font-family: quicksand-semibold;
+}
+
+@font-face {
+  src: url(./fonts/KaushanScript-Regular.ttf);
+  font-family: KushanScript-Regular;
+}
+
+.KushanScript-Regular {
+  font-family: KushanScript-Regular;
+}
+
+@keyframes runn {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(20px);
+  }
+}
+.Swiper {
+  border-radius: 12px;
+  padding: 40px 25px;
+  display: flex;
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-slide {
+  height: 390px;
+}
+
+.swiper-button-prev {
+  width: 50px;
+  left: -35px;
+  height: 50px;
+  position: absolute;
+  bottom: 0%;
+  background-size: cover;
+  transform: rotate(180deg);
+  cursor: pointer;
+  background-image: url(./assets/next.svg);
+  z-index: 30;
+  bottom: 15%;
+}
+.swiper-button-next {
+  width: 50px;
+  right: -35px;
+  height: 50px;
+  position: absolute;
+  bottom: 15%;
+  cursor: pointer;
+  background-size: cover;
+  background-image: url(./assets/next.svg);
+  z-index: 30;
+}
