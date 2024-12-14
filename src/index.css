@@ -50,14 +50,32 @@
   font-family: KushanScript-Regular;
 }
 
+.runn {
+  animation: runn 2s ease-in-out infinite alternate;
+}
+
 @keyframes runn {
   0% {
-    transform: translateX(0);
+    transform: translate(0);
   }
   100% {
-    transform: translateX(20px);
+    transform: translate(0, 20px);
   }
 }
+
+.runn2 {
+  animation: runn 2s ease-in-out infinite alternate;
+}
+
+@keyframes runn {
+  0% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
 .Swiper {
   border-radius: 12px;
   padding: 40px 25px;

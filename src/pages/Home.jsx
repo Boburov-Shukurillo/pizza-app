@@ -1,7 +1,5 @@
-import React from 'react'
 import burger from '../assets/burger.jpeg'
 import search_icon from '../assets/search-icon.svg'
-import leaf from '../assets/leaf.png'
 
 const Home = () => {
 
